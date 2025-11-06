@@ -1,0 +1,42 @@
+Screen {
+    layout: horizontal;
+  }
+
+
+#main {
+  layout: horizontal;
+  width: 2fr;
+  height: 100%;
+  background: $background;
+}
+
+.pane {
+  border-title-align: center;
+  color: $primary;
+  border: round $accent;
+  background: $background;
+}
+
+
+.pane:focus {
+  border: heavy $secondary;
+}
+
+#file_tree,
+#notes {
+  width: 1fr;
+  height: 100%;
+}
+
+#sidebar { 
+  layout: vertical;
+  width: 1fr;
+  height: 100%
+}
+
+#weather,
+#subway,
+#ssh,
+#sys_info {
+  height: 25%;
+}
